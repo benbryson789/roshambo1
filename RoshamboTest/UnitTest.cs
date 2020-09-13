@@ -44,5 +44,44 @@ namespace RoshamboTest
             //Assert
             Assert.Equal("Scissors beats Paper", result);
         }
+
+        [Fact]
+        public void RockTieTests()
+        {
+            //Arrange            
+            var app = new RoshamboService();
+
+            //Act
+            var result = app.Play("Rock", "Rock");
+
+            //Assert
+            Assert.Equal("Tie", result);
+        }
+
+        [Fact]
+        public void PaperTieTests()
+        {
+            //Arrange            
+            var app = new RoshamboService();
+
+            //Act
+            var result = app.Play("Paper", "Paper");
+
+            //Assert
+            Assert.Equal("Tie", result);
+        }
+
+        [Fact]
+        public void ScissorsTieTests()
+        {
+            //Arrange            
+            var app = new RoshamboService();
+
+            //Act
+            var result = app.Play("Scissors", "Scissors");
+
+            //Assert
+            Assert.Equal("Tie", result);
+        }
     }
 }

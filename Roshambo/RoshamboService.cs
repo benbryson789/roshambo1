@@ -13,7 +13,7 @@ namespace Roshambo
             {
                 case "Rock":
                     if (input2 == "Rock")
-                        result = "tied";
+                        result = "Tie";
                     else if (input2 == "Paper")
                         result = "Paper beats Rock";
                     else if (input2 == "Scissors")
@@ -23,7 +23,7 @@ namespace Roshambo
                     if (input2 == "Rock")
                         result = "Paper beats Rock";
                     else if (input2 == "Paper")
-                        Console.WriteLine("tied");
+                        result = "Tie";
                     else if (input2 == "Scissors")
                         result = "Scissors beats Paper";
                     break;
@@ -33,7 +33,7 @@ namespace Roshambo
                     else if (input2 == "Paper")
                         result = "Scissors beats Paper";
                     else if (input2 == "Scissors")
-                        Console.WriteLine("tied");
+                        result = "Tie";
                     break;
             }
 
