@@ -31,5 +31,18 @@ namespace RoshamboTest
             //Assert
             Assert.Equal("Paper beats Rock", result);
         }
+
+        [Fact]
+        public void ScissorsBeatsPaperTests()
+        {
+            //Arrange            
+            var app = new RoshamboService();
+
+            //Act
+            var result = app.Play("Scissors", "Paper");
+
+            //Assert
+            Assert.Equal("Scissors beats Paper", result);
+        }
     }
 }
